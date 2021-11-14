@@ -1,4 +1,72 @@
+/* ======================
+Variables 
+ ======================== */
+:root {
+  /* color */
+  --color-background: hsl(12, 100%, 97%);
+  --color-primary-light: #f486b5;
+  --color-primary-dark: #cc5bd2;
+  --color-primary-even-darker: #8e44cf;
+  --color-oppisit: #fde12d;
+  --main-gray: #afafaf;
+  --off-white: hsl(0, 0%, 97%);
+  /* transition */
+  --main-transition: all 0.3s linear;
+  /* units */
+  --main-spacing: 0.2em;
+}
+/* ======================
+Global Styles 
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background: hsl(12, 100%, 97%);
+  background: var(--color-background);
   font-family: "Fira Code", monospace;
+  color: var(--color-primary-even-darker);
+  letter-spacing: var(--main-spacing);
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  /* a are links */
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--main-spacing);
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-weight: 300;
+  /* I imported the regular 300 google font */
+  font-size: 0.7rem;
+  line-height: 2;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--color-primary-light);
+  color: var(--color-primary-light);
+  background: var(--color-background);
+  margin: 0.5rem 1rem;
+  transition: var(--main-transition);
+}
+.btn:hover {
+  color: var(--color-background);
+  background: var(--color-primary-light);
 }
